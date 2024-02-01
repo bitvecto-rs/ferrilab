@@ -38,7 +38,9 @@ let g = [true, false, true, false]
 ## Using a `BitVec`
 
 Once constructed, `BitVec` implements the entire API that `Vec` does in the
-standard library. This remains uninteresting to write out.
+standard library. This remains uninteresting to write out. <!--- Why? --->
+
+<!--- Also, why does everything have such an early return on each line?--->
 
 Like `BitSlice`, `BitVec` and `BitBox` are implemented as stack handles that use
 the specially-encoded pointer to describe their region. This enables them to

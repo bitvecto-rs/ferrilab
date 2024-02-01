@@ -19,9 +19,10 @@ that, for users looking for compact `usize => bool` collections, substituting
 types in your project codebase ought to be enough to make your project Just
 Work™️.
 
-It is the fact that `BitSlice` acts exactly like `[bool]`, and can only be used
-through `&BitSlice` and `&mut BitSlice` references, that makes `bitvec` unique.
-No other Rust library has this capability.
+<!--- Is there a reason there's an early return on each of these lines?--->
+
+What makes `bitvec` unique is that `BitSlice` acts exactly like `[bool]`, and can only be used
+through `&BitSlice` and `&mut BitSlice` references. No other Rust library has this capability.
 
 Before we explore the data structures in more detail, there are three caveats I
 must provide:
